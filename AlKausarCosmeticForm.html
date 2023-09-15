@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics's Home Delivery |</title>
+    <style>
+           * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            border-bottom:1px solid gray ;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            padding: 30px 90px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav #logo {
+            font-size: 40px;
+        }
+
+        nav #logo span {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #manu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #manu a {
+            text-decoration: none;
+            color: #232323;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        #manu a:first-child {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #manu a:hover {
+            color: khaki;
+        }
+
+        #manu a:active{
+            color: red;
+        }
+        
+        #form {
+            padding: 10px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:20px;
+        }
+
+        form {
+            background-image: url(Images/Al-KausarBG.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 15px 25px;
+            box-shadow: -15px -10px 20px 10px gray;
+        }
+
+        form h1,
+        label {
+            padding: 10px;
+        }
+
+        form h1 span {
+            color: red;
+        }
+
+        form p {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        form input,
+        select {
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: inherit;
+            font-size: 20px;
+        }
+
+        form .bt {
+            margin-top: 10px;
+            padding: 10px 20px;
+            width: 100%;
+        }
+        /* Effects */
+        form .cursor:hover{
+            cursor: pointer;
+        }
+
+        form #bt1:hover{
+            color: green;
+        }
+        form #bt2:hover{
+            color: red;
+        }
+        @media screen and (max-width:750px){
+            nav {
+                display: initial; 
+            }
+            nav #logo{
+                width: 100%;
+                text-align: center;
+            }
+            #manu {
+                text-align: center;
+                justify-content: space-around;
+                padding: 0 20px ;
+            }
+        }
+        @media screen and (max-width:490px){
+            form{
+                padding: 15px 5px;
+                width: 100%;
+                box-shadow: none;
+            }
+            form h1{
+                margin-bottom: 4px;
+            }
+        }
+        @media screen and (max-width:449px){
+            nav #logo{
+                width: 100%;
+                text-align: center;
+            }
+            #manu{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            #manu a{
+                display: block;
+            }
+            #form{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">Al-<span>Kausar</span></div>
+            <div id="manu">
+                <a href="AlKausarMed.html">Home </a>
+                <a href="AlKausarDoctorCons.html">Doctor Conselling</a>
+                <a href="AlKausarContactUs.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="form">
+                <form action="">
+                    <h1>Fields followed by * are <span>important</span>.</h1>
+                    <p>
+                        <label for="custName">Name * : &nbsp;
+                            <input class="css" type="text" name="custName" id="custName" required
+                                placeholder="e.g Ali Naveed Aqeel">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="custGender">Gender :&nbsp;
+                            Male&nbsp;<input type="radio" class="cursor" name="custGender" id="male">&nbsp;&nbsp;Female <input
+                                type="radio" class="cursor" name="custGender" id="female">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="custEmail">Email * : &nbsp;
+                            <input class="css" type="email" name="custEmail" id="custEmail" required
+                                placeholder="user@gmail.com">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="custCont">Contact Number * :&nbsp;
+                            <input class="css" type="tel" name="custCont" id="custCont" required
+                                placeholder="03********">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="custAdd">Delivery Address * :&nbsp;
+                            <input class="css" type="text" name="custAdd" id="custAdd" required
+                                placeholder="cityname,street#,House# etc">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="medName">Cosmetic Name * :&nbsp;
+                            <input class="css" type="text" name="medName" id="medName" required
+                                placeholder="e.g Sun Block">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="medType">Cosmetic Size * :&nbsp;
+                            <select name="medType" id="medType" required>
+                                <option value="choice">choose the type</option>
+                                <option value="op1">Small</option>
+                                <option value="op2">Medium</option>
+                                <option value="op3">Large</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="medQuant">Required Quantity * :&nbsp;
+                            <input class="css" type="number" name="medQuant" id="medQuant" required
+                                placeholder="e.g 1 piece/packet">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="submit">
+                            <input type="submit" class="bt" id="bt1" value="Order Now">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="reset">
+                            <input type="reset" class="bt" id="bt2" value="Reset">
+                        </label>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

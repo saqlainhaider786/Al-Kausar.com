@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mirza&family=Noto+Naskh+Arabic&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            border-bottom: 1px solid gray;
+        }
+
+        nav {
+            display: flex;
+            padding: 30px 90px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav #logo {
+            font-size: 40px;
+        }
+
+        nav #logo span {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #manu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #manu a {
+            text-decoration: none;
+            color: #232323;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        #manu a:first-child {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #manu a:hover {
+            color: khaki;
+        }
+
+        #manu a:active {
+            color: red;
+        }
+
+        #detContainer {
+            margin: auto;
+            width: 80%;
+            padding: 20px 30px;
+        }
+
+        #details {
+            padding: 60px 80px;
+        }
+
+        #detContainer img {
+            margin: 0 20px 10px 0px;
+            float: left;
+        }
+
+        #add {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+        }
+
+        address {
+            padding: 20px 30px;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            line-height: 40px;
+        }
+
+        address a {
+           text-decoration: none;
+        }
+        
+        address span{
+            color: #232323;
+            font-size: 20px;
+        }
+        address img {
+            width: 100%;
+            height: 40vh;
+        }
+
+        @media screen and (max-width:750px) {
+            nav {
+                display: initial;
+            }
+
+            nav #logo {
+                width: 100%;
+                text-align: center;
+            }
+
+            #manu {
+                text-align: center;
+                justify-content: space-around;
+                padding: 0 20px;
+            }
+        }
+
+        @media screen and (max-width:449px) {
+            nav #logo {
+                width: 100%;
+                text-align: center;
+            }
+
+            #manu {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            #manu a {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">Al-<span>Kausar</span></div>
+            <div id="manu">
+                <a href="AlKausarMed.html"> Home </a>
+                <a href="AlKausarHomeDelivery.html">Home Delivery</a>
+                <a href="AlKausarDoctorCons.html">Doctor Conselling</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="detContainer">
+                <img src="Images\Al-KausarOwner.jpg" alt="Owner" width="200">
+                <p id="details">
+                    Assalam-O-Alaikum ! My Name is Ali Naveed Aqeel. I am the Owner Of Al-Kausar Medical Store.
+                    I have working experience of 8+ Years in Medical Field. I worked in Sindh Institude of Urology and
+                    Transplantation (SIUT) Karachi for 2+ Years.
+                </p>
+            </div>
+            <br>
+            <div id="add">
+                <address>
+                    <span id="own">Owner : </span> <span>Ali Naveed Aqeel</span> <br>
+                    <span id="phn"><i class="fa-brands fa-whatsapp fa-2xl"></i></span> <span> : 03438822514</span> <br>
+                    <a href="https://www.facebook.com/mubashir.mubashir.5205"><i
+                            class="fa-brands fa-facebook fa-2xl"></i> <span> : علی نوید عقیل</span></a> <br>
+                    <a href="https://www.instagram.com/aqeel3237/"><i class="fa-brands fa-instagram fa-2xl"></i> <span>: aqeel3237</span></a>
+                    <p>
+                        Shop#53, Opp. Indus Motel,College Road Skardu.<br>
+                        &copy;copyright 2023
+                    </p>
+                </address>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

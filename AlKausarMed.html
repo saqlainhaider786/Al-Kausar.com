@@ -1,0 +1,177 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home |</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        header {
+            font-weight: bold;
+            width: 100%;
+            border-bottom:1px solid gray ;
+        }
+
+        /*----> nav */
+        nav {
+            display: flex;
+            padding: 30px 90px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav #logo {
+            font-size: 45px;
+            letter-spacing: 4px;
+        }
+
+        nav #logo span {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #manu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #manu a {
+            text-decoration: none;
+            color: #232323;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px 20px;
+        }
+
+        #manu a:first-child {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #manu a:hover {
+            color: khaki;
+        }
+
+        #manu a:active{
+            color: red;
+        }
+        /* Body */
+        #content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 40px;
+        }
+
+        #left {
+            flex-basis: 40%;
+            letter-spacing: 5px;
+        }
+
+        #left h2 {
+            font-size: 40px;
+        }
+
+        #left span:nth-child(odd) {
+            color: red;
+        }
+
+        /* #left span:nth-child(3) {
+            color: red;
+        } */
+        #left span:nth-child(even){
+            color: rgba(0, 0, 255, 0.7);
+        }
+        /* #left span:last-child {
+            color: rgba(0, 0, 255, 0.7);
+        } */
+
+        #left h4 {
+            font-size: 25px;
+        }
+
+        #right {
+            flex-basis: 50%;
+        }
+
+        #right img {
+            width: 90%;
+        }
+
+        /* media Query */
+        @media screen and (max-width:1058px) {
+            nav {
+                display: initial; 
+            }
+            nav #logo{
+                width: 100%;
+                text-align: center;
+            }
+            #manu {
+                text-align: center;
+                justify-content: space-around;
+                padding: 0 20px ;
+            }
+        }
+        @media screen and (max-width:737px){
+            header{
+                border-bottom: none;
+            }
+            nav #logo{
+                width: 100%;
+                text-align: center;
+            }
+            #manu{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            #manu a{
+                display: block;
+            }
+            #content{
+                text-align: center;
+                padding: 20px 40px;
+                flex-direction: column-reverse;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">Al-<span>Kausar</span></div>
+            <div id="manu">
+                <a href="AlKausarHomeDelivery.html">Home Delivery</a>
+                <a href="AlKausarDoctorCons.html">Doctor Conselling</a>
+                <a href="AlKausarContactUs.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+        <div id="left">
+            <h2> <span>Al</span>-<span>Kausar</span><span> Medical</span> <span>Store</span></h2>
+            <h4>Chemist & Cosmetics <br>
+                All Kinds of Medicines And Cosmetics are available at reasonable Rates.
+            </h4>
+        </div>
+        <div id="right">
+            <img src="Images\Al-KausarLogo.jpg" alt="LOGO" width="400">
+        </div>
+    </div>
+</body>
+
+</html>

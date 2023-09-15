@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Delivery |</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        header {
+            font-weight: bold;
+            border-bottom:1px solid gray ;
+            width: 100%;
+        }
+
+        /*----> nav */
+        nav {
+            display: flex;
+            padding: 30px 90px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav #logo {
+            font-size: 40px;
+        }
+
+        nav #logo span {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #manu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #manu a {
+            text-decoration: none;
+            color: #232323;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        #manu a:first-child {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #manu a:hover {
+            color: khaki;
+        }
+
+        #manu a:active{
+            color: red;
+        }
+        
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+        }
+
+        #desc {
+            flex-basis: 50%;
+            padding: 40px 30px;
+            font-size: 25px;
+            font-weight: lighter;
+            line-height: 50px;
+            letter-spacing: 5px;
+            background-image: url(Images/Al-KausarBG.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #desc h2 {
+            font-size: 40px;
+        }
+
+        #desc span:first-child {
+            color: rgba(0, 128, 0, 0.7);
+        }
+
+        #desc span:nth-child(2) {
+            color: rgba(0, 0, 255, 0.7);
+        }
+
+        #desc span:last-child {
+            color: red;
+        }
+        #links {
+            flex-basis: 40%;
+            text-align: center;
+            line-height: 30px;
+            padding: 20px 30px;
+        }
+
+        #links h1{
+            margin-bottom: 20px;
+            color: gray;
+        }
+        #links a {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 20px;
+            text-decoration: underline;
+        }
+        #links a:hover{
+            color: rgba(0, 128, 0, 0.7);
+        }
+        @media screen and (max-width:1260px){
+            #container{
+                width: 100%;
+                flex-direction:column ;
+            }
+        }
+        
+        @media screen and (max-width:753px){
+            nav {
+                display: initial; 
+            }
+            nav #logo{
+                width: 100%;
+                text-align: center;
+            }
+            #manu {
+                text-align: center;
+                justify-content: space-around;
+                padding: 0 20px ;
+            }
+            #container{
+                width: 100%;
+                flex-direction:column ;
+            }
+        }
+        @media screen and (max-width:433px){
+            #manu{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            #manu a{
+                display: block;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">Al-<span>Kausar</span></div> 
+            <div id="manu">
+                <a href="AlKausarMed.html">Home </a>
+                <a href="AlKausarDoctorCons.html">Doctor Conselling</a>
+                <a href="AlKausarContactUs.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="container">
+                <div id="desc">
+                    <p>
+                    <h2> <span>Al</span>-<span>Kausar</span><span> Medical store</span></h2> Offers the
+                    facility to the Customers to Order thier Required Medicines Or Cosmetics or Both
+                    on their demand basis.
+                    </p>
+                </div>
+                <div id="links">
+                    <h1>Order Now :</h1>
+                    <a href="MedicineForm.html">Medicines</a><br> <br>
+                    <a href="AlKausarCosmeticForm.html">Cosmetics</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
